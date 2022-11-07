@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>BayrakParts</title>
+  </head>
+
+  <body>
+    <div class="root" id="root"></div>
+    <div class="root" id="root1"></div>
+    <div class="root2" id="root2"></div>
+
+    <script type="module">
+      import Search from "./search.js";
+
+      const page = new Search();
+      const someElement = document.querySelector("#root");
+      someElement.append(page.element);
+    </script>
+  </body>
+</html>
